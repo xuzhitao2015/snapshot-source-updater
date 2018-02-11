@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext.repoConfigure = [
+'groupId':"com.tinyxu.tools",
+'artifactId':"snapshot-source-updater",
+'version':"1.0.1",
+'type':"jar",
+'repoSiteUrl':'https://github.com/xuzhitao2015/snapshot-source-updater',
+'gitUrl':'git@github.com:xuzhitao2015/snapshot-source-updater.git'
+]
+
+apply from: rootProject.file('bintray-upload.gradle')
