@@ -12,7 +12,7 @@ repositories {
 ext.repoConfigure = [
 'groupId':"com.tinyxu.tools",
 'artifactId':"snapshot-source-updater",
-'version':"1.0.1",
+'version':"1.0.0",
 'type':"jar",
 'repoSiteUrl':'https://github.com/xuzhitao2015/snapshot-source-updater',
 'gitUrl':'git@github.com:xuzhitao2015/snapshot-source-updater.git'
