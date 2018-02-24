@@ -2,12 +2,12 @@
 Update snapshot aar source jar by clean task.
 
 ### Guide
-1. Add classpath under dependencies in project root build file.
+1. Add classpath under dependencies in project root build.gradle file.
  ```
  classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0'
  ```
  
- 2. Add apply plugin the end of project root build file.
+ 2. Add apply plugin the end of project root build.gradle file.
  ```
  apply plugin: 'snapshot-source-updater'
  ```
@@ -22,12 +22,12 @@ Update snapshot aar source jar by clean task.
  
  
 ### snapshot-source-updater使用说明
-1. 在根项目的build中dependencies下添加classpath如下：
+1. 在根项目的build.gradle中dependencies下添加classpath如下：
  ```
  classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0'
  ```
  
- 2. 在根项目的build中dependencies下添加plugin引用：
+ 2. 在根项目的build.gradle中dependencies下添加plugin引用：
  ```
  apply plugin: 'snapshot-source-updater'
  ```
