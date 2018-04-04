@@ -11,7 +11,7 @@ Update snapshot aar source jar by clean task.
  ```
  apply plugin: 'snapshot-source-updater'
  ```
- 3. Do clean.
+ 3. Do clean task.
  
  Ok, after will find the newest source jar attached when you do clean task.
  
