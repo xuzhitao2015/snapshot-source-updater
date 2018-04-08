@@ -15,6 +15,8 @@ Update snapshot aar source jar by clean task.
  
  Ok, after will find the newest source jar attached when you do clean task.
  
+ Tip: Gradle download aar and source jar on Aync Now and build. So you want update snapshot source jar must download first.
+ 
  
  
  _____________________________________________________________________________________________________
@@ -35,3 +37,8 @@ Update snapshot aar source jar by clean task.
  3. 执行项目clean操作。
  
 就这样三步，每次执行clean操作就会为snapshot aar寻找最新的source jar关联。
+
+注意：Gradle会在Sync Now和Build时下载aar和source jar，所以要更新snapshot source jar必须先下载source jar。
+
+
+
