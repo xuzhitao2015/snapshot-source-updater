@@ -20,15 +20,8 @@ Update snapshot aar source jar by clean task.
  Sample:
  ```
  buildscript {
-    ext.kotlin_version = '1.1.51'
-    repositories {
-        google()
-        jcenter()
-//
-        maven {
-            url './repo'
-        }
-    }
+    ...
+   
     dependencies {
         ...
         
