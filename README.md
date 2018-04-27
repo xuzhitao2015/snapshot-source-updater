@@ -34,7 +34,8 @@ Update snapshot aar source jar by clean task.
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
-        ** classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0' **
+        
+        classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0'
 
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -53,7 +54,7 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-** apply plugin: 'snapshot-source-updater' **
+apply plugin: 'snapshot-source-updater'
  ```
  
  _____________________________________________________________________________________________________
