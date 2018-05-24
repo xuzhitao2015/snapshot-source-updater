@@ -37,15 +37,20 @@ class SnapshotSourceUpdaterPlugin implements Plugin<Project> {
                 File file   ->
                     // 得到gradle缓存该lib的路径和目录名字
                     def lidDirAndOrigalDirName = getSnapshotLibPath(file)
-                    // 该snapshot各个版本保存的路径
-                    def snapshotAllDirName = lidDirAndOrigalDirName[0]
-                    // 当前snapshot source版本保存的目录名
-                    def curSourceDirName = lidDirAndOrigalDirName[1]
-
-                    // 获取最新的source jar对应的目录名
-                    def newestFileDirName = findNewestFileDirName(new File(snapshotAllDirName))
-                    // 替换source jar为新的目录名
-                    replaceNewestSourceFileDirName(file, curSourceDirName, newestFileDirName)
+                    if (lidDirAndOrigalDirName.length >= 2) {
+                        // 该snapshot各个版本保存的路径
+                        def snapshotAllDirName = lidDirAndOrigalDirName[0]
+                        // 当前snapshot source版本保存的目录名
+                        def curSourceDirName = lidDirAndOrigalDirName[1]
+                        // 获取最新的source jar对应的目录名
+                        if (snapshotAllDirName != null) {
+                            def newestFileDirName = findNewestFileDirName(new File(snapshotAllDirName))
+                            if (newestFileDirName != null) {
+                                // 替换source jar为新的目录名
+                                replaceNewestSourceFileDirName(file, curSourceDirName, newestFileDirName)
+                            }
+                        }
+                    }
             }
         }
     }

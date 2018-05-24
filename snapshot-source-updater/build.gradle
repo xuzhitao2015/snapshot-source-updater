@@ -9,13 +9,25 @@ repositories {
     mavenCentral()
 }
 
+
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository (url: uri('../repo'))
+//        }
+//    }
+//}
+
 ext.repoConfigure = [
 'groupId':"com.tinyxu.tools",
 'artifactId':"snapshot-source-updater",
-'version':"1.0.0",
+'version':"1.0.1",
 'type':"jar",
 'repoSiteUrl':'https://github.com/xuzhitao2015/snapshot-source-updater',
 'gitUrl':'git@github.com:xuzhitao2015/snapshot-source-updater.git'
 ]
 
 apply from: rootProject.file('bintray-upload.gradle')
+
+
+//apply from: rootProject.file('gradle-mvn-push.gradle')

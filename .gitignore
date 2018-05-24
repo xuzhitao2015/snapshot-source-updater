@@ -36,7 +36,7 @@ build/
 */*.iml
 
 local.properties
-bintray-upload.gradle
 
 repo/*
+gradle-mvn-push.gradle
 

@@ -6,12 +6,12 @@ buildscript {
         google()
         jcenter()
 //
-        maven {
-            url './repo'
-        }
+//        maven {
+//            url './repo'
+//        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
@@ -27,6 +27,15 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven{
+            url 'http://192.168.150.32:80/maven/release/'
+        }
+        maven{
+            url 'http://192.168.150.32:80/maven/snapshot/'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
     }
 }
 
