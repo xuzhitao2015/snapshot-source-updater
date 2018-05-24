@@ -24,6 +24,7 @@ artifacts {
 }
 
 // Execute './gradlew bintrayUpload' upload to bintray. And in the binatray project page click 'Add to JCenter'.
+// User this script for bintray upload you should add 'bintray.user' and 'bintray.apikey' in the local.properties file. And define ext.repoConfigure.
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
