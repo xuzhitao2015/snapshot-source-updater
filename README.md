@@ -12,7 +12,7 @@ configurations.all {
 
 2. Add classpath under dependencies in project root build.gradle file.
  ```
- classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0'
+ classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.1'
  ```
  
  3. Add apply plugin the end of project root build.gradle file.
@@ -33,7 +33,7 @@ configurations.all {
     dependencies {
         ...
         
-        classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0'
+        classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.1'
     }
 }
 
@@ -57,7 +57,7 @@ configurations.all {
 ```
 2. 在根项目的build.gradle中dependencies下添加classpath如下：
  ```
- classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.0'
+ classpath 'com.tinyxu.tools:snapshot-source-updater:1.0.1'
  ```
  
  3. 在根项目的build.gradle中dependencies下添加plugin引用：
